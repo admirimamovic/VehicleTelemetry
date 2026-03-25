@@ -54,7 +54,7 @@ VehicleTelemetry/
 ### Run Application
 
 Clone repository
-git clone <repository-url> cd VehicleTelemetry
+git clone [<repository-url>](https://github.com/admirimamovic/VehicleTelemetry.git) cd VehicleTelemetry
 
 Restore dependencies
 dotnet restore
@@ -65,7 +65,7 @@ dotnet run --project VehicleTelemetry
 
 ### Access Swagger UI
 
-https://localhost:5001
+https://localhost:5191
 
 
 ### Run Tests
