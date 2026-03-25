@@ -1,8 +1,6 @@
 # Vehicle Telemetry Receiver API
 
 [![.NET 8](https://img.shields.io/badge/.NET-8.0-purple.svg)](https://dotnet.microsoft.com/download)
-[![Build Status](https://img.shields.io/badge/build-passing-brightgreen.svg)]()
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
 RESTful API for receiving and retrieving vehicle telemetry data from sensors. Built with Clean Architecture and production-ready features.
 
