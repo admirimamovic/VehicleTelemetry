@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.37111.16 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VehicleTelemetry", "VehicleTelemetry\VehicleTelemetry.csproj", "{FB0F3F6D-ACBE-40D6-9414-ABA7BE456B1A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VehicleTelemetryUnitTests", "VehicleTelemetryUnitTests\VehicleTelemetryUnitTests.csproj", "{DF5DE876-751C-4A74-B2B8-2144234B3516}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FB0F3F6D-ACBE-40D6-9414-ABA7BE456B1A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FB0F3F6D-ACBE-40D6-9414-ABA7BE456B1A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FB0F3F6D-ACBE-40D6-9414-ABA7BE456B1A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FB0F3F6D-ACBE-40D6-9414-ABA7BE456B1A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DF5DE876-751C-4A74-B2B8-2144234B3516}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF5DE876-751C-4A74-B2B8-2144234B3516}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF5DE876-751C-4A74-B2B8-2144234B3516}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF5DE876-751C-4A74-B2B8-2144234B3516}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AFE2A4C1-EE67-426D-8617-D07380372336}
+	EndGlobalSection
+EndGlobal
