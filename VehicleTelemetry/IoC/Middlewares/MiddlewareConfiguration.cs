@@ -1,10 +1,14 @@
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Diagnostics.HealthChecks;
 using Microsoft.AspNetCore.Http;
+using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Diagnostics.HealthChecks;
 using Microsoft.Extensions.Hosting;
+using Microsoft.Extensions.Logging;
+using System;
 using System.Text;
 using System.Text.Json;
+using VehicleTelemetry.DL.Entities.DB;
 
 namespace VehicleTelemetry.IoC.Middlewares;
 
@@ -48,6 +52,23 @@ public static class MiddlewareConfiguration
                                [HealthStatus.Unhealthy] = StatusCodes.Status503ServiceUnavailable,
                              }
         });
+
+
+        using (var scope = app.Services.CreateScope())
+        {
+            var services = scope.ServiceProvider;
+            try
+            {
+                var context = services.GetRequiredService<VehicleTelemetryDbContext>();
+                context.Database.EnsureCreated();
+            }
+            catch (Exception ex)
+            {
+                var logger = services.GetRequiredService<ILogger<Program>>();
+                logger.LogError(ex, "Greška prilikom kreiranja baze podataka.");
+            }
+        }
+
         return app;
     }
 }
