@@ -62,6 +62,8 @@ dotnet restore
 Run application
 dotnet run --project VehicleTelemetry
 
+IMPORTANT: When you are starting project first time, DB is created but without any data. Also db files are added to .gitignore file.
+
 
 ### Access Swagger UI
 
